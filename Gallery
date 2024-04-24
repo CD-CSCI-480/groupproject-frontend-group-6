@@ -1,0 +1,50 @@
+import React from 'react';
+import { View, Image, StyleSheet, ScrollView } from 'react-native';
+
+const GalleryPage = () => {
+  return (
+    <ScrollView contentContainerStyle={styles.container}>
+      <View style={{ backgroundColor: 'blue', padding: 20 }}>
+        <Image
+          style={styles.image}
+          source={require('./images/mechanic.jpg')}
+        />
+      </View>
+      <View style={{ backgroundColor: 'blue', padding: 20 }}>
+        <Image
+          style={styles.image}
+          source={require('./images/hair_stylist.jpg')}
+        />
+      </View>
+      <View style={{ backgroundColor: 'blue', padding: 20 }}>
+        <Image
+          style={styles.image}
+          source={require('./images/car_washer.jpg')}
+        />
+      </View>
+      <View style={{ backgroundColor: 'blue', padding: 20 }}>
+        <Image
+          style={styles.image}
+          source={require('./images/food_delivery.jpg')}
+        />
+      </View>
+      {/* Add more images as needed */}
+    </ScrollView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image: {
+    width: 300,
+    height: 300,
+    resizeMode: 'cover',
+    marginBottom: 20,
+  },
+});
+
+export default GalleryPage;
