@@ -1,0 +1,29 @@
+import React from 'react';
+import { View, Text, Button } from 'react-native';
+
+const AboutPage = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'blue' }}>
+      <Text style={{ fontSize: 20, marginBottom: 20 }}>
+        Welcome to EZBOOKING!
+      </Text>
+      <Text style={{ marginBottom: 20 }}>
+        EZBOOKING is designed to pair service providers with customers.
+      </Text>
+      <Text style={{ marginBottom: 20 }}>
+        Contact us at: example@ezbooking.com
+      </Text>
+      <Button
+        title="Go to Services"
+        onPress={() => navigation.navigate('Services')}
+      />
+      <Button
+        title="Go to Bookings"
+        onPress={() => navigation.navigate('Bookings')}
+      />
+      {/* Add more buttons for other pages if needed */}
+    </View>
+  );
+};
+
+export default AboutPage;
