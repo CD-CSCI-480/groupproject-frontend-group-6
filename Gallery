@@ -7,25 +7,25 @@ const GalleryPage = () => {
       <View style={{ backgroundColor: 'blue', padding: 20 }}>
         <Image
           style={styles.image}
-          source={require('./images/mechanic.jpg')}
+          source={require('./assets/mechanic.jpg')}
         />
       </View>
       <View style={{ backgroundColor: 'blue', padding: 20 }}>
         <Image
           style={styles.image}
-          source={require('./images/hair_stylist.jpg')}
+          source={require('./assets/hair_stylist.jpg')}
         />
       </View>
       <View style={{ backgroundColor: 'blue', padding: 20 }}>
         <Image
           style={styles.image}
-          source={require('./images/car_washer.jpg')}
+          source={require('./assets/car_washer.jpg')}
         />
       </View>
       <View style={{ backgroundColor: 'blue', padding: 20 }}>
         <Image
           style={styles.image}
-          source={require('./images/food_delivery.jpg')}
+          source={require('./assets/food_delivery.jpg')}
         />
       </View>
       {/* Add more images as needed */}
